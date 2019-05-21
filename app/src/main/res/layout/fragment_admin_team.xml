@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Admin.Fragment.AdminTeamFragment"
+
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/match_section"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Match Number"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:id="@+id/labeled"
+        />
+
+        <com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
+            android:id="@+id/numberPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labeled"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/number_picker_bg_color"
+            app:snp_buttonBackgroundTintSelector="@color/white"
+            app:snp_buttonIconLeft="@drawable/left"
+            app:snp_buttonIconRight="@drawable/right"
+            app:snp_buttonPaddingBottom="8dp"
+            app:snp_buttonPaddingLeft="8dp"
+            app:snp_buttonPaddingRight="8dp"
+            app:snp_buttonPaddingTop="8dp"
+            app:snp_buttonTouchScaleFactor="0.8"
+            app:snp_maxValue="48"
+            app:snp_minValue="1"
+            app:snp_orientation="horizontal"
+            app:snp_valueMarginEnd="5dp"
+            app:snp_valueMarginStart="5dp"
+            app:snp_value_text_appearance="?android:attr/textAppearanceMedium"
+            app:snp_value_text_color="@color/colorPrimary"
+            app:snp_value_text_size="16sp">
+
+
+        </com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker>
+
+
+<Button
+    android:layout_below="@id/labeled"
+    android:layout_alignParentEnd="true"
+    android:padding="6dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/Widget.AppCompat.Button.Colored"
+    android:text="Enter"
+    android:id="@+id/bt_numberPicker"
+
+    android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/match_section"
+        android:id="@+id/Team_one_section"
+        >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
+    android:id="@+id/sp_teamone"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Team One"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="6dp"
+        android:id="@+id/tv_Team_one_name"
+        />
+
+    <RelativeLayout
+        android:layout_below="@id/tv_Team_one_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorPrimaryDark"
+        android:padding="3dp">
+
+        <Spinner
+
+            android:layout_width="match_parent"
+            android:padding="6dp"
+            android:elevation="6dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#FFFFFF"
+            android:id="@+id/my_team_spinner_one"
+            />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sp_teamone"
+            android:layout_margin="3dp"
+            android:padding="6dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/teamonebtn"
+            android:text="Enter Team One Points "
+            />
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Team_one_section"
+        android:id="@+id/Team_two_section"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:id="@+id/sp_teamtwo"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team two"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:padding="6dp"
+                android:id="@+id/tv_Team_two_name"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorPrimaryDark"
+                android:padding="3dp">
+
+                <Spinner
+                    android:layout_width="50dp"
+                    android:padding="6dp"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#FFFFFF"
+                    android:id="@+id/my_team_spinner_two"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sp_teamtwo"
+            android:layout_margin="3dp"
+            android:padding="6dp"
+            android:id="@+id/teamtwo_recyclerview"
+            />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+
+
+</ScrollView>

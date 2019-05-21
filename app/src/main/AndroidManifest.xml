@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cricketworldcup.worldcup">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".SplashScreen"
+            android:fitsSystemWindows="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Admin.AdminActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Authentication.LoginActivity"
+            android:fitsSystemWindows="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Authentication.RegistrationActivity"
+            android:fitsSystemWindows="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".Chnage.ChangeActivity" />
+        <activity android:name=".TestActivity" />
+        <activity
+            android:name=".BroadCast"
+            android:screenOrientation="landscape" />
+        <activity android:name=".ImageUploadActivity" />
+        <activity android:name=".MainActivity"></activity>
+    </application>
+
+</manifest>

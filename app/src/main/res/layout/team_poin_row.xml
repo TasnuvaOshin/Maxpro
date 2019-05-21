@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    app:cardBackgroundColor="@color/colorPrimary"
+    app:cardElevation="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <TextView
+            android:id="@+id/tv_point_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="Player Name"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/ti_run"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_point_name"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="11dp"
+            android:background="#cfcfcf"
+            android:hint="R"
+            android:inputType="number"
+            android:padding="6dp"
+
+            />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/ti_wi"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_point_name"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="110dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="9dp"
+            android:background="#cfcfcf"
+            android:gravity="center"
+            android:hint="W"
+            android:inputType="number"
+
+
+            android:padding="6dp" />
+
+        <Button
+            android:id="@+id/bt_Save"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_point_name"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="6dp"
+            android:text="Save" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

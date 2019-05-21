@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="120dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginBottom="120dp"
+    android:background="@color/colorAccent"
+    tools:context=".Fragments.LiveTelecastFragment">
+
+    <Button
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_design"
+        android:fontFamily="sans-serif"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="Live Match"
+        android:id="@+id/home_match_quiz"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+    <!--thisone mainly Live Match -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp">
+
+        <TextView
+            android:id="@+id/next_match"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Next Match"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/between_team_one"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@id/next_match"
+            android:fontFamily="sans-serif"
+            android:text="ENGLAND"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/between"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/between_team_one"
+            android:fontFamily="sans-serif"
+            android:padding="4dp"
+            android:text="vs"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/between_team_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/between"
+
+
+            android:fontFamily="sans-serif"
+            android:text="SOUTH AFRICA"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/match_time"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/between_team_two"
+            android:fontFamily="sans-serif"
+            android:text="Thu, 30 May, 3:30pm"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/match_venue"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/match_time"
+            android:fontFamily="sans-serif"
+            android:text="Kennington Oval, London"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            />
+
+
+    </RelativeLayout>
+
+
+    <Button
+
+        android:id="@+id/home_my_team"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/button_desing_bottom_one"
+        android:fontFamily="sans-serif"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:paddingEnd="15dp"
+        android:paddingRight="15dp"
+        android:text="ScoreCard"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.WinnerFragment">
+
+    <ImageView
+        android:id="@+id/winner_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/match_winner" />
+
+    <RelativeLayout
+        android:id="@+id/match_winner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/winner_logo">
+
+        <TextView
+            android:id="@+id/fixture_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Match 1,May 30, Thu"
+            android:textAlignment="center"
+            android:textColor="#1d1d1B"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fixture_teamone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fixture_time"
+            android:fontFamily="sans-serif"
+            android:text="England"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#1d1d1B"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fixture_vs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fixture_teamone"
+            android:fontFamily="sans-serif"
+            android:text="vs"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#1d1d1B"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fixture_teamtwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fixture_vs"
+            android:fontFamily="sans-serif"
+            android:text="South Africa"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#1d1d1B"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fixture_venue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fixture_teamtwo"
+            android:fontFamily="sans-serif"
+            android:text="winner"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#1d1d1B"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/winner_team"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fixture_venue"
+            android:fontFamily="sans-serif"
+            android:text="England"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#1d1d1B"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/match_winner"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="bottom"
+
+        >
+
+
+        <android.support.design.button.MaterialButton
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:text="Quiz winner"
+
+            android:id="@+id/bt_quiz_winner"
+            />
+
+        <android.support.design.button.MaterialButton
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="My Team Winner"
+            android:id="@+id/btn_myteamwinner"
+
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

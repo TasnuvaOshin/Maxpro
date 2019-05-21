@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Home"
+
+        android:id="@+id/home"
+
+        />
+    <item
+        android:title="Live"
+        android:id="@+id/live" />
+
+
+
+
+    <item android:title="Fixture"
+        android:id="@+id/fixture"
+        />
+    <item android:title="Team's"
+        android:id="@+id/team_profile"
+        />
+
+    <item android:title="Profile"
+        android:id="@+id/user_profile"
+        />
+
+</menu>

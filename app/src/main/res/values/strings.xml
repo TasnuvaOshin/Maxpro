@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">WorldCup-CALCIN-O-MAXPRO</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="teamonedemo">
+
+Eoin Morgan (capt)
+Moeen Ali
+Jonny Bairstow (wk)
+Jos Buttler (wk)
+Tom Curran
+Joe Denly
+Liam Plunkett
+Adil Rashid
+Joe Root
+Jason Roy
+Ben Stokes
+David Willey
+Chris Woakes
+Mark Wood
+
+
+
+</string>
+
+    <string name="teamtwodemo">
+
+Faf du Plessis (capt)
+Hashim Amla
+Quinton de Kock (wk)
+JP Duminy
+Aiden Markram
+David Miller
+Lungi Ngidi
+Anrich Nortje
+Andile Phehlukwayo
+Dwaine Pretorius
+Kagiso Rabada
+Tabraiz Shamsi
+Dale Steyn
+Imran Tahir
+Rassie van der Dussen
+
+
+
+    </string>
+
+    <string name="demomyteam">
+Aiden Markram\n
+David Miller\n
+Joe Root\n
+Jason Roy\n
+Ben Stoke
+    </string>
+
+
+    <string-array name="match_winner">
+        <item> </item>
+        <item>match 1</item>
+        <item>Match 2</item>
+        <item>Match 3</item>
+    </string-array>
+
+    <string-array name="team_list">
+        <item>BANGLADESH</item>
+        <item>AFGHANISTAN</item>
+        <item>AUSTRALIA</item>
+        <item>ENGLAND</item>
+        <item>INDIA</item>
+        <item>NEW ZEALAND</item>
+        <item>PAKISTAN</item>
+        <item>SOUTH AFRICA</item>
+        <item>SRI LANKA</item>
+        <item>WEST INDIES</item>
+    </string-array>
+</resources>

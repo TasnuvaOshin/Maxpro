@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/admin_quiz"
+        android:title="Quiz"
+        android:icon="@drawable/match_quiz" />
+
+    <item
+        android:id="@+id/admin_team"
+        android:title="Team"
+        android:icon="@drawable/team_profile" />
+    <item
+        android:id="@+id/admin_report"
+        android:title="Report"
+        android:icon="@drawable/icon_fixture" />
+
+</menu>

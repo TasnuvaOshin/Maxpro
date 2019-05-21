@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Admin.Fragment.AdminQuizFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/match_no"
+            android:padding="6dp"
+
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="6dp"
+
+
+
+
+            >
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Match no"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:id="@+id/et_match_no"
+                 android:inputType="number"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question One"
+
+            android:layout_below="@id/match_no"
+        android:id="@+id/question_one_section"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textAllCaps="true"
+
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@id/question_one_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/question_1_input"
+
+        android:padding="6dp"
+        android:elevation="6dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="6dp"
+
+
+
+
+        >
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Who will Win Today?"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:id="@+id/et_qus_one"
+
+
+
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/question_1_option1"
+        android:layout_below="@id/question_1_input"
+        android:padding="6dp"
+        android:elevation="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="6dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+
+        >
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter option one"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:id="@+id/et_qus_one_op_one"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/question_1_option2"
+        android:layout_below="@id/question_1_option1"
+
+        android:padding="6dp"
+        android:elevation="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="6dp"
+        app:counterMaxLength="50"
+        app:counterEnabled="true"
+
+        >
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter option two"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:inputType="text"
+            android:id="@+id/et_qus_one_op_two"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question  Two"
+        android:id="@+id/question_two_section"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textAllCaps="true"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_below="@id/question_1_option2"
+
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@id/question_two_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/question_2_input"
+        android:padding="6dp"
+        android:elevation="6dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="50"
+
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="6dp"
+
+
+        >
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Question"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:id="@+id/et_qus_two"
+            android:maxLines="1"
+
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/question_2_option1"
+        android:layout_below="@id/question_2_input"
+        android:padding="6dp"
+        android:elevation="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="6dp"
+
+        >
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter option one"
+            android:textAlignment="center"
+            android:textSize="14sp"
+
+            android:inputType="text"
+            android:id="@+id/et_qus_two_op_one"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/question_2_option2"
+        android:layout_below="@id/question_2_option1"
+
+        android:padding="6dp"
+        android:elevation="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="6dp"
+
+        >
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter option two"
+            android:textAlignment="center"
+            android:textSize="14sp"
+
+            android:inputType="text"
+            android:id="@+id/et_qus_two_op_two"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_2_option2"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="Submit Question"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="6dp"
+            android:id="@+id/bt_submit_qus"
+            />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="Submit Answer"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="6dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/bt_submit_ans"
+
+
+            />
+
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>
